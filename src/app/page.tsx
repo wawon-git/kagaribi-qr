@@ -10,10 +10,10 @@ const Home: NextPage = () => {
       <div className='bg-white p-4 rounded-md'>
         <QrCodeScanner />
       </div>
-      <p className='mt-8 text-center text-sm text-gray-500'>QRコードをスキャン</p>
+      {/* <p className='mt-8 text-center text-sm text-gray-500'>QRコードをスキャン</p>
       <div className='bg-white p-4 rounded-md'>
         <QrReaderImage />
-      </div>
+      </div> */}
     </main>
   )
 }
