@@ -5,7 +5,7 @@ import QrReaderImage from './components/QrReaderImage'
 
 const Home: NextPage = () => {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-start p-32'>
+    <main className='flex min-h-screen flex-col items-center justify-start p-16'>
       <p className='mt-8 text-center text-sm text-gray-500'>QRコードをスキャン</p>
       <div className='bg-white mt-8 p-4 rounded-md'>
         <QrCodeScanner />
