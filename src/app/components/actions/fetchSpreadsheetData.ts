@@ -21,7 +21,7 @@ export async function fetchSpreadsheetData(participantId: string) {
             // 1行目（ヘッダー）を取得
             const headers = data.values[0];
             // Id, GamerTag, Venue Type, Venue Fee Name, Total Owed の列インデックスを取得
-            const indexes = ['Id', 'GamerTag', 'Venue Type', 'Venue Fee Name', 'Total Owed'].map(header => headers.indexOf(header));
+            const indexes = ['GamerTag', 'Street Fighter 6', 'Venue Fee Name', 'Total Owed'].map(header => headers.indexOf(header));
             // participantIdに一致する行を探す
             const matchingRow = data.values.find((row: any) => row[0] === participantId);
             if (matchingRow) {
